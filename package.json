@@ -1,0 +1,33 @@
+{
+  "name": "react-native-async-storage-namespace",
+  "version": "1.0.0",
+  "description": "A simple wrapper to add namespace and event subscription to @react-native-async-storage/async-storage",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Brian Choi <brian9206@hotmail.com>",
+  "keywords": [
+    "react-native",
+    "react native",
+    "async storage",
+    "asyncstorage",
+    "storage"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brian9206/react-native-async-storage-namespace.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.0"
+  },
+  "peerDependencies": {
+    "@react-native-async-storage/async-storage": "^1.16.1"
+  },
+  "dependencies": {
+    "event-target-shim": "^6.0.2"
+  }
+}
