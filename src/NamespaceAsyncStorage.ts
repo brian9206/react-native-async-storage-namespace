@@ -93,11 +93,15 @@ export class NamespaceAsyncStorage implements AsyncStorageStatic {
       callback(
         error,
         result
-          ? result.filter(this._isInNamespace).map(this._stripNamespacePrefix)
+          ? result
+              .filter((key) => this._isInNamespace(key))
+              .map((key) => this._stripNamespacePrefix(key))
           : null
       )
     })
-    return keys.filter(this._isInNamespace).map(this._stripNamespacePrefix)
+    return keys
+      .filter((key) => this._isInNamespace(key))
+      .map((key) => this._stripNamespacePrefix(key))
   }
 
   public async multiGet(
