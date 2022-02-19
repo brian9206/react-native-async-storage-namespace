@@ -36,7 +36,7 @@ async function test() {
   const value = await AsyncStorage.getItem('stuff')
   // value = 'good stuff'
     
-  const keys = AsyncStorage.getAllKeys()
+  const keys = await AsyncStorage.getAllKeys()
   // keys = ['stuff']
 }
 
